@@ -7,7 +7,7 @@ const CookiePolicy = () => {
   }, []);
 
   return (
-    <div className="max-w-[1200px] mx-auto px-[40px] pb-[100px] pt-[25px]">
+    <div className="max-w-[1200px] mx-auto lg:px-[40px] md:px-[24px] px-[16px] pb-[100px] pt-[25px]">
       <h2 className="mt-[20px] text-text-primary text-[32px] leading-[36px] font-[700] mb-[10px]">
         Cookie Policy
       </h2>
