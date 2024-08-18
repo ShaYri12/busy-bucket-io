@@ -1,7 +1,11 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 
 const PrivacyPolicy = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <div className="max-w-[1200px] mx-auto px-[40px] pb-[100px] pt-[25px]">
       <h2 className="mt-[20px] text-text-primary text-[32px] leading-[36px] font-[700] mb-[10px]">
@@ -13,8 +17,10 @@ const PrivacyPolicy = () => {
           respect your privacy and comply with any applicable law and regulation
           regarding any personal information we may collect about you, including
           across our website,{" "}
-          <Link className="text-[#0000EE] underline">busybucket.io</Link>, and
-          other sites we own and operate.
+          <Link className="text-[#0000EE] underline" to="/">
+            busybucket.io
+          </Link>
+          , and other sites we own and operate.
         </p>
         <p className="text-text-secondary text-[16px] leading-[26px] mb-0">
           Personal information is any information about you which can be used to

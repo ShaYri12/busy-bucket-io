@@ -1,18 +1,17 @@
 import React, { useState, useEffect } from "react";
-import { NavLink } from "react-router-dom";
+import { NavLink, useLocation } from "react-router-dom";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isHeaderVisible, setIsHeaderVisible] = useState(true);
   const [lastScrollY, setLastScrollY] = useState(0);
+  const location = useLocation();
 
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY > lastScrollY) {
-        // Scrolling down
         setIsHeaderVisible(false);
       } else {
-        // Scrolling up
         setIsHeaderVisible(true);
       }
       setLastScrollY(window.scrollY);
@@ -26,6 +25,16 @@ const Header = () => {
   useEffect(() => {
     document.documentElement.style.scrollBehavior = "smooth";
   }, []);
+
+  // Scroll to section when location hash changes
+  useEffect(() => {
+    if (location.hash) {
+      const element = document.querySelector(location.hash);
+      if (element) {
+        element.scrollIntoView({ behavior: "smooth" });
+      }
+    }
+  }, [location]);
 
   return (
     <div className="w-full h-[75px] bg-white">
