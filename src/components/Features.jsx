@@ -27,7 +27,7 @@ const featureData = [
     description:
       "Keep track of your inventory in real-time, track quantities, assign items to employees, integrate with e-commerce platforms, and use barcode printers and scanners to make it robust.",
     imageSrc: "/assets/icons/box.svg",
-    about: "In Development",
+    about: "Future Feature",
   },
   {
     name: "Sales",
@@ -66,7 +66,7 @@ const Features = () => {
       className="max-w-[1200px] py-[60px] mx-auto px-[15px]"
     >
       <div className="flex flex-col text-center w-full">
-        <h1 className="text-2xl font-medium title-font mb-[30px] text-gray-900 tracking-widest">
+        <h1 className="text-[32px] text-center font-[700] leading-[36px] mt-[20px] mb-[40px] text-text-primary">
           Features
         </h1>
       </div>
@@ -74,12 +74,12 @@ const Features = () => {
         {featureData.map((feature, index) => (
           <div
             key={index}
-            className="h-full flex md:flex-row flex-col md:items-start justify-center text-center sm:text-left gap-[20px]"
+            className="h-full flex md:flex-row flex-col md:items-start justify-center text-center sm:text-left md:gap-[20px] sm:gap-[9px] gap-[10px]"
           >
             <span className="p-[14px] h-fit w-fit bg-[#eff0ff] rounded-[10px]">
               <img
                 alt={feature.name}
-                className="flex-shrink-0 rounded-lg min-w-[42px] min-h-[42px] w-[42px] h-[42px] object-cover object-center"
+                className="flex-shrink-0 rounded-lg min-w-[31.1px] w-[42px] object-cover object-center"
                 src={feature.imageSrc}
               />
             </span>
@@ -91,8 +91,10 @@ const Features = () => {
                 {feature.description}
               </p>
               <span
-                className={`inline-flex text-[16px] leading-[24px] text-text-primary ${
-                  feature.about === "Released" && "text-[#30c762]"
+                className={`inline-flex text-[16px] leading-[24px] ${
+                  feature.about === "Released"
+                    ? "text-[#30c762]"
+                    : "text-text-primary"
                 }`}
               >
                 {feature.about}

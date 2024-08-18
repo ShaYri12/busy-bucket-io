@@ -4,10 +4,10 @@ const Contact = () => {
   return (
     <section
       id="contact"
-      className="relative bg-white py-[120px] border border-[#eff3fb]"
+      className="relative bg-white py-[120px] border border-[#eff3fb] px-[15px]"
     >
       <div
-        className="max-w-[560px] px-[15px] bg-white rounded-[6px] mx-auto pb-[30px]"
+        className="max-w-[560px] ps-[15px] sm:pe-[15px] pe-[14px]  bg-white rounded-[6px] mx-auto pb-[30px]"
         style={{ boxShadow: "0 18px 40px rgba(55, 68, 111, .14)" }}
       >
         <div className="flex flex-col w-full">

@@ -7,11 +7,11 @@ const Pricing = () => {
         <h1 className="text-[32px] text-center font-[700] leading-[36px] mt-[20px] mb-[10px] text-text-primary">
           Pricing
         </h1>
-        <div className="w-[665px] mx-auto">
+        <div className="md:w-[665px] w-[315px] mx-auto">
           <div className="flex flex-col justify-center mt-[45px] mx-auto md:flex-row gap-[30px]">
             {/* Paid Plan */}
             <div
-              className=" max-w-[315.2px] w-[315.2px] flex-1 bg-white h-[612px] rounded-[10px] p-[30px] pb-[40px]"
+              className=" max-w-[315.2px] w-[315.2px] flex-1 bg-white md:min-h-[612px] min-h-[606px] rounded-[10px] p-[30px] pb-[40px]"
               style={{ boxShadow: "0 30px 50px rgba(55, 68, 111, .1)" }}
             >
               <div className="flex flex-col h-full items-center">
@@ -95,7 +95,7 @@ const Pricing = () => {
                       Basic support
                     </li>
                   </ul>
-                  <button className="w-[255px] py-[12px] px-[28px] bg-[#4e74ff] text-white rounded-[4px] text-[16px] font-[600] hover:bg-[#3a5ebc]">
+                  <button className="mt-[30px] w-[255px] py-[12px] px-[28px] bg-[#4e74ff] text-white rounded-[4px] text-[16px] font-[600] hover:bg-[#3a5ebc]">
                     Get Free Trial
                   </button>
                 </div>
@@ -104,7 +104,7 @@ const Pricing = () => {
 
             {/* Custom Plan */}
             <div
-              className="flex-1 bg-white rounded-[10px] p-[30px] pb-[40px] max-w-[315.2px] w-[315.2px] h-[612px]"
+              className="flex-1 bg-white rounded-[10px] p-[30px] pb-[40px] max-w-[315.2px] w-[315.2px] min-h-[612px]"
               style={{ boxShadow: "0 30px 50px rgba(55, 68, 111, .1)" }}
             >
               <div className="flex flex-col items-center h-full">
