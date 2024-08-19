@@ -1,5 +1,5 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -21,18 +21,22 @@ const Footer = () => {
           </a>
           <div className="flex flex-col ms-[-10px]">
             <span className="w-[180px] h-[69.65px]">
-              <img
-                className="h-full w-full object-contain"
-                src="/assets/google-play.png"
-                alt=""
-              />
+              <a href="https://play.google.com/store/apps/details?id=com.busybucket.app&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1">
+                <img
+                  className="h-full w-full object-contain"
+                  src="/assets/google-play.png"
+                  alt=""
+                />
+              </a>
             </span>
             <span className="w-[180px] h-[53.48px]">
-              <img
-                className="h-full w-full object-contain"
-                src="/assets/app-store.svg"
-                alt=""
-              />
+              <a href="https://apps.apple.com/us/app/busybucket/id1665758339?ign-itscg=30200&ign-itsct=apps_box_badge">
+                <img
+                  className="h-full w-full object-contain"
+                  src="/assets/app-store.svg"
+                  alt=""
+                />
+              </a>
             </span>
           </div>
         </div>
