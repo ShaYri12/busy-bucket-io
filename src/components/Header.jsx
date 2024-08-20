@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { NavLink, useLocation } from "react-router-dom";
+import { Link, NavLink, useLocation } from "react-router-dom";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -104,12 +104,16 @@ const Header = () => {
                 </a>
               </nav>
               <div className="flex items-center gap-[10px] text-[#4e74ff]">
-                <button className="inline-flex w-max items-center border-[1.6px] text-[14px] font-[600] rounded-[4px] border-[#4e74ff] py-[10px] px-[24px] focus:outline-none hover:bg-[#D8EFFF] transition-all duration-300 ease-in-out">
-                  Sign In
-                </button>
-                <button className="inline-flex w-max items-center border-[1.6px] border-[#4e74ff] py-[10px] px-[24px] text-[14px] font-[600] rounded-[4px] bg-[#4e74ff] text-white focus:outline-none hover:bg-[#3898ec] transition-all duration-300 ease-in-out">
-                  Try it Free
-                </button>
+                <Link to="https://app.busybucket.io/sign-in">
+                  <button className="inline-flex w-max items-center border-[1.6px] text-[14px] font-[600] rounded-[4px] border-[#4e74ff] py-[10px] px-[24px] focus:outline-none hover:bg-[#D8EFFF] transition-all duration-300 ease-in-out">
+                    Sign In
+                  </button>
+                </Link>
+                <Link to="https://app.busybucket.io/sign-up">
+                  <button className="inline-flex w-max items-center border-[1.6px] border-[#4e74ff] py-[10px] px-[24px] text-[14px] font-[600] rounded-[4px] bg-[#4e74ff] text-white focus:outline-none hover:bg-[#3898ec] transition-all duration-300 ease-in-out">
+                    Try it Free
+                  </button>
+                </Link>
               </div>
             </div>
           </div>

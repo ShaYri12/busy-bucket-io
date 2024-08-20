@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Hero = () => {
   return (
@@ -13,9 +14,11 @@ const Hero = () => {
             are solving this problem by building a simple business app.
           </p>
           <div className="flex justify-center">
-            <button className="inline-flex text-white bg-[#4e74ff] text-white py-[13px] px-[34px] focus:outline-none hover:bg-primary-color rounded-[4px] text-[18px] font-[600]">
-              Try it Free
-            </button>
+            <Link to="https://app.busybucket.io/sign-up">
+              <button className="inline-flex text-white bg-[#4e74ff] text-white py-[13px] px-[34px] focus:outline-none hover:bg-primary-color rounded-[4px] text-[18px] font-[600] transition-all duration-300 ease-in-out">
+                Try it Free
+              </button>
+            </Link>
           </div>
         </div>
         <div className="lg:w-[60%] md:w-[50%]  md:max-w-auto max-w-[700px]">
